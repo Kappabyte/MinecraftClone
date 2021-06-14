@@ -43,7 +43,8 @@ public class Raycast {
         }
         return null;
     }
-
+    
+    //Some code borrowed from: https://stackoverflow.com/questions/62507603/check-if-ray-has-intersection-with-virtual-box
     private static float collidesWith(AABBCollider other, Vector3f ray, Vector3f origin) {
         Vector3f minAbs = other.getMinAbsolute();
         Vector3f maxAbs = other.getMaxAbsolute();
