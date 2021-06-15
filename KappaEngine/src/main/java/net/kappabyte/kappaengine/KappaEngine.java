@@ -25,10 +25,13 @@ public final class KappaEngine {
         if(instance != null) {
             throw new IllegalStateException("Already Initalized");
         }
-
+	
+	if(getVersion() < 8) {
+	    Log.fatal("Java 8 or higher is required to run this program. Please upgrade your java version to run this application.");
+	    System.exit(-1);
+	}
         if(getVersion() < 11) {
-            Log.fatal("KappaEngine requires at least Java 11 to run! (Running in legacy mode)");
-            System.exit(-1);
+            Log.warn("You are using an outdated version on Java. It is recommended to upgrade to Java 11 or higher!");
         }
 
         instance = new KappaEngine();

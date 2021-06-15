@@ -68,7 +68,11 @@ public class Scene implements Parent {
 
     public void printSceneHeirarchy(int depth, GameObject[] objects) {
         for(GameObject object : objects) {
-            Log.debug(" ".repeat(depth) + "-" + object.getName());
+	    String whitespace = "";
+	    for(int i = 0; i < depth; i++) {
+		whitespace += " ";
+	    }
+            Log.debug(whitespace + "-" + object.getName());
             printSceneHeirarchy(depth + 1, object.getChildren());
         }
     }
