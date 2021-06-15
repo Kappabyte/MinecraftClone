@@ -1,3 +1,5 @@
+Please leave a star if you like it!
+
 # MinecraftClone
 Mineclone is my final Computer Science 30 project. It is a clone of the popular video game Minecraft. It was written in Java, using LWJGL and KappaEngine to create the 3D scene and fast noise for random noise generation.
 
