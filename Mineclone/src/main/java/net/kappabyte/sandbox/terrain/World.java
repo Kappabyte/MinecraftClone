@@ -119,8 +119,8 @@ public class World extends Component {
     }
 
     public void setBlockAt(int x, int y, int z, BlockMaterial material) {
-        int chunkX = x / 16;
-        int chunkY = z / 16;
+        int chunkX = x >> 4;
+        int chunkY = z >> 4;
 
         Chunk chunk = getChunkAt(chunkX, chunkY, false);
         if(chunk != null) {

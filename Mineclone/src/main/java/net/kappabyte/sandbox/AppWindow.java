@@ -44,7 +44,7 @@ public class AppWindow extends Window {
         player.addComponent(new Rigidbody(1.0f));
         player.addComponent(new CharacterController(camera));
         getScene().addGameObject(player);
-        player.getTransform().setPosition(new Vector3f(0, 40, 0));
+        player.getTransform().setPosition(new Vector3f(5, 40, 5));
         camera.getTransform().setPosition(new Vector3f(0, 1.6f, 0));
         getScene().setActiveCamera(camera.GetComponent(Camera.class));
     }

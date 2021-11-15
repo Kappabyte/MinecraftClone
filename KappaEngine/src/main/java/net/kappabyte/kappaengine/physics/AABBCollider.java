@@ -17,7 +17,7 @@ public class AABBCollider extends Collider {
         this.min = min;
         this.max = max;
 
-        debugMesh = generateDebugMesh();
+        //debugMesh = generateDebugMesh();
     }
 
     @Override
