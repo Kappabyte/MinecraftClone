@@ -131,7 +131,6 @@ public class World extends Component {
                     chunk.setBlockAt(x % 16, y, z % 16, new Block(new Vector3i(x % 16, y, z % 16), material));
                 }
             } catch(IndexOutOfBoundsException e) {
-                Log.info("Failed to set block at: " + x + ", " + y + ", "  + z);
             }
             buildChunkAt(chunkX, chunkY, true);
         }
